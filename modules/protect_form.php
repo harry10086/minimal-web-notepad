@@ -20,15 +20,15 @@
 <form method="POST">
   <?php if ($_SERVER['REQUEST_METHOD'] == 'POST') {
     ?>
-	Invalid password
+	无效密码
   <?php
 } ?>
-	Password to access:</br>
+	请输入密码访问:</br>
 	<input type="password" name="password" autofocus>
-	<button type="submit">Go</button>
-	<p style="font-size: small">This note has a password<br><a href="<?php echo dirname($_SERVER['PHP_SELF']);?>">Create a new note</a></p>
+	<button type="submit">确定</button>
+	<p style="font-size: small">该笔记有密码<br><a href="<?php echo dirname($_SERVER['PHP_SELF']);?>">创建新笔记 </a></p>
 	<?php if ($allowReadOnlyView == "1") { ?>
-		<p style="font-size: small"><a href="<?php echo strtok($_SERVER["REQUEST_URI"],'?') . "?view"; ?>">View as Read Only</a></p>
+		<p style="font-size: small"><a href="<?php echo strtok($_SERVER["REQUEST_URI"],'?') . "?view"; ?>">只读查看</a></p>
 	<?php } ?>
 </form>
 </div>

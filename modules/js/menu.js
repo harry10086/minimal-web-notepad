@@ -47,7 +47,7 @@ function toggleMonospace(lnk_obj) {
 }
 
 function deleteFile() {
-  var r = confirm("Are you sure you want to delete this note?");
+  var r = confirm("你确定要删除这则笔记吗?");
   if (r == true) {
     document.getElementById('content').value = '';
     uploadContent();

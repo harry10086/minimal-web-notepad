@@ -1,6 +1,6 @@
 <?php
 require_once 'modules/protect.php';
-Protect\with('modules/protect_form.php', 'put your password here');
+Protect\with('modules/protect_form.php', 'your password');
 ?>
 <!DOCTYPE html>
 <html>
@@ -63,7 +63,7 @@ Protect\with('modules/protect_form.php', 'put your password here');
 
 	<meta charset="utf-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<title>Note list</title>
+	<title>笔记列表</title>
 	<script src="js/notelist.min.js"></script>
 	<link rel="shortcut icon" href="favicon.ico" />
 	<style>
@@ -81,16 +81,16 @@ Protect\with('modules/protect_form.php', 'put your password here');
 </style>
 </head>
 <body>
-<a href="<?php print $base_url; ?>">New note</a><br><br>
+<a href="<?php print $base_url; ?>">新建笔记</a><br><br>
 <table id="filterTable">
 	<tr>
-	<th><input type="text" id="filterNotes" onkeyup="filterTable()" placeholder="Filter by note title.." style="background:transparent;border:none;"></th>
+	<th><input type="text" id="filterNotes" onkeyup="filterTable()" placeholder="输入笔记名查找.." style="background:transparent;border:none;"></th>
 	</tr>
 </table>
 <table id="notelistTable">
-	<th onclick="sortTable(0)">Name</th>
-	<th onclick="sortTable(1)"><small>Last Modified</small></th>
-	<th><small>File Size</small></th>
+	<th onclick="sortTable(0)">名称</th>
+	<th onclick="sortTable(1)"><small>修改时间</small></th>
+	<th><small>文件大小</small></th>
 	</tr>
 	<?php
     $files = array_diff(scandir($data_directory), array('.', '..','.htaccess'));

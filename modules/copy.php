@@ -2,9 +2,9 @@
 	<div class="modal-content">
 		<span class="close-button_copy">&times;</span>
 		<br>
-		<br>Copy <a onclick="copyToClipboard('copyURL');">note link/url</a>
-		<br>Copy <a onclick="copyToClipboard('copyURLViewOnly');">read only link/url</a>
-		<br>Copy <a onclick="copyToClipboard('printable');">note text</a><br>
+		<br>复制 <a onclick="copyToClipboard('copyURL');">链接</a>
+		<br>复制 <a onclick="copyToClipboard('copyURLViewOnly');">只读链接</a>
+		<br>复制 <a onclick="copyToClipboard('printable');">文本</a><br>
 		<span id="copyMessage" style="color: red;"></span>
 	</div>
 </div>
